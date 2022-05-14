@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "483907771777",
+    "project_id": "diabeticeschecking",
+    "storage_bucket": "diabeticeschecking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483907771777:android:98f23a4aedeb40b8d11c80",
+        "android_client_info": {
+          "package_name": "com.meass.diabeticeschecking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483907771777-4n86oa163320l3ir6b7i9amjhtpgq5ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHGIDj4trPUbMZamYqqxPazVvlb7iiK5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483907771777-4n86oa163320l3ir6b7i9amjhtpgq5ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img"
+
+    tools:context=".BuyCoin">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_below="@id/main_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/allofus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <EditText
+                            android:id="@+id/spinner1"
+                            android:textSize="15dp"
+                            android:maxLength="10"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/black"
+                            android:hint="Enter Point Ammount"
+                            android:background="@drawable/border"
+                            android:layout_margin="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            ></EditText>
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_10dp"
+                            >
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/upgrade"
+
+
+                                android:background="@drawable/main_bg"
+                                android:gravity="center_vertical"
+                                android:layout_centerInParent="true"
+                                android:minWidth="160dp"
+                                android:text="Send"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+
+
+                                ></Button>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+                        android:background="@drawable/main_bg"
+                        android:gravity="center_vertical"
+                        android:text="Deposite History"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+
+
+                        ></TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rreeeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_marginLeft="@dimen/space_10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginBottom="@dimen/space_10dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/empty_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/space_10dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+
+                        android:foregroundGravity="center"
+
+                        android:visibility="invisible"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="empty_list.json"
+                        app:lottie_loop="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

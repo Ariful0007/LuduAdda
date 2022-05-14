@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meass.diabeticeschecking">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SetWinner"></activity>
+        <activity
+            android:name=".Winnar"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".SecondHome"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".LotteryList"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".ListoFgAME"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".AdminPolicy"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".HelpLineActivity"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".History"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".UpdatePinActivity"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".HomeACTIVITY" />
+        <activity
+            android:name=".ConfromActivity"
+            android:parentActivityName=".BuyCoin" />
+        <activity
+            android:name=".BuyCoin"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".Register2"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".HomeACTIVITY" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General">
+        <menu>
+            <item
+
+                android:id="@+id/addNote"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+
+            <item
+                android:id="@+id/promotion"
+                android:icon="@drawable/mainuser"
+                android:title="Profile" />
+            <item
+
+                android:id="@+id/addNote11"
+                android:icon="@drawable/lottery"
+                android:title="My Lottery" />
+            <item
+
+                android:id="@+id/winnar"
+                android:icon="@drawable/lottery"
+                android:title="Winner List" />
+            <item
+                android:id="@+id/helpl"
+                android:icon="@drawable/ic_baseline_help_24"
+                android:title="Help Line" />
+            <item
+                android:id="@+id/helpl__1"
+                android:icon="@drawable/facebook"
+                android:title="Facebook Page" />
+            <item
+                android:id="@+id/helpl__d1"
+                android:icon="@drawable/customer"
+                android:title="Facebook Group" />
+            <item
+                android:id="@+id/ploicey"
+                android:icon="@drawable/ic_baseline_policy_24"
+                android:title="Privcy policy" />
+            <item
+                android:id="@+id/infooo"
+                android:icon="@drawable/ic_baseline_info_24"
+                android:title="Trems and condition" />
+            <item
+                android:id="@+id/shareapp2"
+                android:icon="@drawable/ic_baseline_vpn_key_24"
+                android:title="Log out" />
+
+
+
+
+
+
+
+        </menu>
+    </item>
+
+
+
+
+</menu>

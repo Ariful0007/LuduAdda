@@ -1,0 +1,28 @@
+<resources>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Enter Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="app_name">Ludo Gamer Adda</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="register">Register</string>
+
+    <!--Navigation drawer items-->
+    <string name="feedback">Feedback</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+
+    ///
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

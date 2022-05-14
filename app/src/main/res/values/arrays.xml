@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Reply Preference -->
+
+    //
+    <string-array name="payment">
+        <item>Select Payment Methode</item>
+        <item>Bkash</item>
+
+        <item>Nagad</item>
+
+    </string-array>
+    //
+
+</resources>
