@@ -329,4 +329,20 @@ public class ProfileActivity extends AppCompatActivity {
             }
         }).create().show();
     }
+
+    public void mylottery(View view) {
+        startActivity(new Intent(getApplicationContext(),SecondHome.class));
+    }
+
+    public void lotterylist(View view) {
+        startActivity(new Intent(getApplicationContext(),LotteryList.class));
+    }
+
+    public void myludu(View view) {
+        startActivity(new Intent(getApplicationContext(),SecondHome1.class));
+    }
+
+    public void convertbalance(View view) {
+        startActivity(new Intent(getApplicationContext(),ConvertBalanceActivity.class));
+    }
 }

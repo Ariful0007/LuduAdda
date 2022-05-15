@@ -130,6 +130,7 @@
                 android:layout_width="0dp"
                 android:layout_height="130dp"
                 android:layout_weight="1"
+                android:onClick="luduu"
                 app:cardBackgroundColor="#fff"
                 app:cardUseCompatPadding="true"
                 app:cardElevation="4dp"

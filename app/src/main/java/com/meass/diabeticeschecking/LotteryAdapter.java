@@ -48,7 +48,7 @@ public class LotteryAdapter extends RecyclerView.Adapter<LotteryAdapter.myview> 
     @NonNull
     @Override
     public LotteryAdapter.myview onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.lottery_image,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.imagegine,parent,false);
         return new LotteryAdapter.myview(view);
     }
 
@@ -321,7 +321,7 @@ public class LotteryAdapter extends RecyclerView.Adapter<LotteryAdapter.myview> 
         public myview(@NonNull View itemView) {
             super(itemView);
            customer_name=itemView.findViewById(R.id.lottery_card);
-            dddddd=itemView.findViewById(R.id.dddddd);
+            dddddd=itemView.findViewById(R.id.card_view8);
             ddimage=itemView.findViewById(R.id.ddimage);
         }
     }

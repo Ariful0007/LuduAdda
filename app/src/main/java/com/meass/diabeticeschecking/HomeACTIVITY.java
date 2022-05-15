@@ -142,10 +142,60 @@ public class HomeACTIVITY extends AppCompatActivity implements NavigationView.On
                             if (task.getResult().exists()) {
                                 try {
 
-                                    drawerName.setText(task.getResult().getString("name"));
+                                    String name=task.getResult().getString("name");
+                                    firebaseFirestore.collection("Users")
+                                            .document(firebaseAuth.getCurrentUser().getUid())
+                                            .collection("Main_Balance")
+                                            .document(firebaseAuth.getCurrentUser().getEmail())
+                                            .get()
+                                            .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                                    if (task.isSuccessful()) {
+                                                        if (task.getResult().exists()) {
+                                                            String purches_balance=task.getResult().getString("main_balance");
+                                                            String shoping_balance=task.getResult().getString("third_level");
+                                                            String self_income=task.getResult().getString("monthly_income");
+                                                            String daily_income=task.getResult().getString("daily_income");
+                                                            try {
+                                                                drawerName.setText(name.toString()+"("+purches_balance+")");
+                                                            }catch (Exception e) {
+                                                                drawerName.setText(name.toString()+"("+purches_balance+")");
+                                                            }
+
+
+                                                        }
+                                                    }
+                                                }
+                                            });
                                 }catch (Exception e) {
 
-                                    drawerName.setText(task.getResult().getString("name"));
+                                    String name=task.getResult().getString("name");
+                                    firebaseFirestore.collection("Users")
+                                            .document(firebaseAuth.getCurrentUser().getUid())
+                                            .collection("Main_Balance")
+                                            .document(firebaseAuth.getCurrentUser().getEmail())
+                                            .get()
+                                            .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                                    if (task.isSuccessful()) {
+                                                        if (task.getResult().exists()) {
+                                                            String purches_balance=task.getResult().getString("main_balance");
+                                                            String shoping_balance=task.getResult().getString("third_level");
+                                                            String self_income=task.getResult().getString("monthly_income");
+                                                            String daily_income=task.getResult().getString("daily_income");
+                                                            try {
+                                                                drawerName.setText(name.toString()+"("+purches_balance+")");
+                                                            }catch (Exception e) {
+                                                                drawerName.setText(name.toString()+"("+purches_balance+")");
+                                                            }
+
+
+                                                        }
+                                                    }
+                                                }
+                                            });
                                 }
 
                             }
@@ -156,6 +206,8 @@ public class HomeACTIVITY extends AppCompatActivity implements NavigationView.On
                         }
                     }
                 });
+
+
         firebaseFirestore.collection("Counter")
 
                 .document("abc@gmail.com")
@@ -450,5 +502,10 @@ public class HomeACTIVITY extends AppCompatActivity implements NavigationView.On
     public void lottery(View view) {
         Intent intent=new Intent(getApplicationContext(),LotteryList.class);
        startActivity(intent);
+    }
+
+    public void luduu(View view) {
+        Intent intent=new Intent(getApplicationContext(),LuduType.class);
+        startActivity(intent);
     }
 }

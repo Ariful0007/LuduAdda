@@ -9,7 +9,7 @@
 
 
 
-    tools:context=".LotteryList"
+    tools:context=".SecondHome"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
 
